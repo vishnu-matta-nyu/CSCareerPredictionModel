@@ -42,7 +42,7 @@ def load_data(self):
     print(f"Data loaded. Shape: {self.df.shape}")
 ```
 
-This method loads the CSV file into a pandas DataFrame.
+This function loads the CSV file into a pandas DataFrame.
 
 ### Data Preprocessing
 
@@ -80,7 +80,7 @@ def preprocess_data(self):
     print(f"Target shape: {self.y.shape}")
 ```
 
-This method preprocesses the data by:
+This function preprocesses the data by:
 1. Removing unnecessary columns
 2. Encoding ordinal categorical variables (Python, Java, SQL skills)
 3. One-hot encoding nominal categorical variables (Gender, Interested Domain, Projects)
@@ -106,7 +106,7 @@ def train_and_evaluate_model(self):
     print("Model training and evaluation completed.")
 ```
 
-This method uses a Random Forest Classifier with Leave-One-Out Cross-Validation for model training and evaluation.
+This function uses a Random Forest Classifier with Leave-One-Out Cross-Validation for model training and evaluation.
 
 ### Model Evaluation
 
@@ -123,7 +123,7 @@ def calculate_metrics(self):
     print(f'LOOCV F1 Score: {f1:.4f}')
 ```
 
-This method calculates and prints the performance metrics of the model.
+This function calculates and prints the performance metrics of the model.
 
 ### Visualization
 
@@ -152,7 +152,7 @@ def visualize_results(self):
     plt.show()
 ```
 
-This method creates and displays two visualizations:
+This function creates and displays two visualizations:
 1. A confusion matrix to show the model's performance across different classes
 2. A bar plot of the top 10 feature importances
 
@@ -185,7 +185,7 @@ def predict_job_role(self, resume_data):
     return predicted_job_role
 ```
 
-This method takes a new resume as input, preprocesses it in the same way as the training data, and returns a predicted job role.
+This function takes a new resume as input, preprocesses it in the same way as the training data, and returns a predicted job role.
 
 ## Results Analysis
 
@@ -224,7 +224,7 @@ To use this system:
 You can customize the system by:
 - Modifying the `ordinal_label_encoding()` function to change how skills are encoded.
 - Adjusting the `RandomForestClassifier` parameters in `train_and_evaluate_model()` for different model behavior.
-- Adding or removing features by modifying the `preprocess_data()` method.
+- Adding or removing features by modifying the `preprocess_data()` function.
 
 ## Troubleshooting
 
