@@ -189,7 +189,7 @@ This function takes a new resume as input, preprocesses it in the same way as th
 
 ## Results Analysis
 
-After running the model, we obtained the following results:
+After running the model, I obtained the following results:
 
 ```
 Data preprocessed.
